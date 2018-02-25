@@ -1,0 +1,83 @@
+<html>
+<style>
+    .headbox{
+        display:flex;
+        background-color: coral;
+    }
+    #logo{
+        flex:4;
+    }
+    #checkout{
+        flex:1;
+        max-width: 3%;
+    }
+    .menubox{
+        display: flex;
+        border: 1px solid black;
+        padding: 2px;
+        height: 5%;
+        background-color: burlywood;
+    }
+    .mainbox{
+        display:flex;
+        flex-direction:column;
+        height: 90%;
+        padding-left: 25%;
+        padding-right: 25%;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        background-color: chocolate;
+    }
+    #desciption{
+        flex:4;
+        padding: 5px;
+    }
+    #promotion{
+        flex:1;
+        padding: 5px;
+    }
+    #sendinfo{
+        flex:3;
+        border: 2px solid black;
+        height: 100%;
+        width: 100%;
+        padding: 5px;
+    }
+    #confirmsec{
+        flex:1;
+        align-content: center;
+    }
+</style>
+<header>
+    <section class=headbox>
+    <div id=logo>LOGO</div>
+    <a href="confirm-buy.html" id=checkout>
+    <img src="checkout.png" alt="checkout" height="5%">
+    </a>
+    </section>
+</header>
+<body style="background-color:bisque">
+    <section class=menubox>
+        MENU SECTION
+    </section>
+    <section class=mainbox>
+        <div id=desciption>
+            รายการสินค้า 2 ราย<br><br>
+            Power Bank 50000 mAh รุ่น Q4 - Black (Free USB+ซองกำมะหยี่) มูลค่า 120 บาท<br>
+            Powerbank แบตสำรอง 50000mAh รุ่น A020 แพ็คคู่ (สีทอง/เงิน) แถมฟรี สาย USB มูลค่า 90 บาท
+        </div>
+        <div id=promotion>
+            Promotion Code: <input type="text" style="border=1px solid black;" name="codepromotion"/>
+        </div>
+        <input type="text" id=sendinfo style="width:100%; text-align:start;" name="sendinfo" value="กรุณากรอกที่อยู่สำหรับการจัดส่งสินค้า"/><br>
+        <div id=confirmsec style="text-align:center">
+            <from action="confirm-but.html">
+                        <input type="submit" value="ยืนยันการสั่งสินค้า"/>
+            </from>
+           <from action="confirm-but.html">
+                <input type="submit" value="ยกเลิก"/>
+            </from>
+        </div>
+    </section>
+</body>
+</html>
